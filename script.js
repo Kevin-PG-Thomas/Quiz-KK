@@ -38,16 +38,16 @@ const questions = [
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80",
 
     choixA:
-      "Réponse A",
+      "Ecossais",
 
     choixB:
-      "Réponse B",
+      "Pom pom girl",
 
     bonneReponse:
-      "A",
+      "Pom pom girl",
 
     explication:
-      "Cette fois, la bonne réponse était A.",
+      "Cette fois, la bonne réponse était Pom pom.",
 
     imageReponse:
       "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=900&q=80"
