@@ -20,7 +20,7 @@ const questions = [
       "Pom pom girl",
 
     bonneReponse:
-      "A",
+      "Ecossais",
 
     explication:
       "Ecossais !",
