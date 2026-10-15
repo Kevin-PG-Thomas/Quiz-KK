@@ -8,25 +8,25 @@ const questions = [
 
   {
     question:
-      "Laquelle de ces deux réponses est correcte ?",
+      "Ecossais ou Pom pom girl ?",
 
     imageQuestion:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80",
+      "images/q01.jpg",
 
     choixA:
-      "Réponse A",
+      "Ecossais",
 
     choixB:
-      "Réponse B",
+      "Pom pom girl",
 
     bonneReponse:
-      "B",
+      "Ecossais",
 
     explication:
-      "B est la bonne réponse. Tu peux mettre ici ton explication.",
+      "Ecossais !",
 
     imageReponse:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+      "images/r01.jpg"
   },
 
 
