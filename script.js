@@ -142,20 +142,63 @@ function answer(choice) {
 
   answered = true;
 
-
   const q = questions[index];
 
-const reponseChoisie =
+  // Transforme A ou B en texte de réponse
+  const reponseChoisie =
     choice === "A" ? q.choixA : q.choixB;
 
-const correct =
-    reponseChoisie === q.bonneReponse;
-
+  // Compare directement les textes
+  const correct =
+    reponseChoisie.trim() === q.bonneReponse.trim();
 
   if (correct) {
     score++;
   }
 
+  document.getElementById("question-view").style.display =
+    "none";
+
+  document.getElementById("feedback-view").style.display =
+    "block";
+
+  const result =
+    document.getElementById("result");
+
+  if (correct) {
+
+    result.textContent = "✓ VRAI !";
+    result.className = "result good";
+
+  } else {
+
+    result.textContent = "✕ FAUX";
+    result.className = "result bad";
+
+  }
+
+  document.getElementById("correct-answer").textContent =
+    "Bonne réponse : " + q.bonneReponse;
+
+  document.getElementById("explanation").textContent =
+    q.explication;
+
+  document.getElementById("quiz-image").src =
+    q.imageReponse;
+
+  if (index === questions.length - 1) {
+
+    document.getElementById("next").textContent =
+      "Voir mon score";
+
+  } else {
+
+    document.getElementById("next").textContent =
+      "Question suivante →";
+
+  }
+
+}
 
   /* Cache la question */
 
