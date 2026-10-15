@@ -145,9 +145,11 @@ function answer(choice) {
 
   const q = questions[index];
 
+const reponseChoisie =
+    choice === "A" ? q.choixA : q.choixB;
 
-  const correct =
-    choice === q.bonneReponse;
+const correct =
+    reponseChoisie === q.bonneReponse;
 
 
   if (correct) {
