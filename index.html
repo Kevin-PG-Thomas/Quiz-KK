@@ -1,3 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quiz A/B</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <header>
+    <strong>QUIZ A / B</strong>
+    <span id="counter"></span>
+  </header>
+
+  <div class="progress">
+    <div id="bar"></div>
+  </div>
+
+  <div class="card">
+
+    <img id="quiz-image" alt="Illustration du quiz">
+
+    <div class="content">
+
+      <!-- QUESTION -->
+
+      <div id="question-view">
+
+        <div id="label" class="eyebrow"></div>
+
+        <h1 id="question"></h1>
+
+        <div class="answers">
+
+          <button class="answer" onclick="answer('A')">
+            <span class="letter">A</span>
+            <span id="answer-a" class="answer-text"></span>
+          </button>
+
+          <button class="answer" onclick="answer('B')">
+            <span class="letter">B</span>
+            <span id="answer-b" class="answer-text"></span>
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- CORRECTION -->
+
+      <div id="feedback-view" style="display:none">
+
+        <div id="result" class="result"></div>
+
+        <h2 id="correct-answer"></h2>
+
+        <p id="explanation"></p>
+
+        <button id="next" class="primary" onclick="nextQuestion()">
+          Question suivante →
+        </button>
+
+      </div>
+
+
+      <!-- FIN DU QUIZ -->
+
+      <div id="finish-view" style="display:none">
+
+        <div class="party">🎉</div>
+
+        <h1 class="center">
+          Terminé !
+        </h1>
+
+        <p class="center">
+          Ton score
+        </p>
+
+        <div id="score" class="score"></div>
+
+        <button class="primary" onclick="restart()">
+          Rejouer
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
